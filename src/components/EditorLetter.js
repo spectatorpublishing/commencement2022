@@ -10,6 +10,7 @@ const LetterWrapper = styled.div`
   background-color: ${theme.colors.lightGray};
   align-self: center;
   margin-top: 4rem;
+  padding-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +81,7 @@ const TopBar = () => {
 
 const EmailWrapper = styled.div`
     width: 80%;
-    height: 80%;
+    height: fit-content;
     padding: 0 10%;
     background-color: ${theme.colors.white};
     font-family: "Lato";
@@ -90,12 +91,14 @@ const Email = () => {
     return (
         <EmailWrapper>
             <EmailHeader></EmailHeader>
+            <EmailBody></EmailBody>
         </EmailWrapper>
     )
 }
 
 const HeaderWrapper = styled.div`
     margin: 2.5rem 0 2rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     //background-color: pink;
@@ -103,30 +106,48 @@ const HeaderWrapper = styled.div`
     border-bottom: 1px solid ${theme.colors.gray};
 `;
 
-const Subject = styled.div`
-    font-weight: 700;
-    margin-bottom: .5rem;
-`;
-
 const ObjectLine = styled.div`
     display: flex;
     flex-direction: row;
 `;
 
-const Object = styled.div`
-    font-weight: 400;
-    margin-bottom: 2rem;
+const Object = styled.h2`
 `;
 
 const EmailHeader = () => {
     return (
         <HeaderWrapper>
-            <Subject>Columbia Spectator</Subject>
+            <h3>Columbia Spectator</h3>
             <ObjectLine>
                 <Object style={{color:theme.colors.black}}>To:</Object>
                 <Object style={{color:theme.colors.gray}}>Class of 2022</Object>
             </ObjectLine>
         </HeaderWrapper>
+    )
+}
+
+const BodyWrapper = styled.div`
+    margin: 2.5rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    //background-color: pink;
+    font-size: 2rem;
+`;
+
+const EmailBody = () => {
+    return (
+        <BodyWrapper>
+            <h1>Columbia University Commencement 2022</h1>
+            <p>Dear readers,</p>
+            <p>More than ever, this year’s Homecoming truly feels like coming home. Many of us spent last year away from Morningside Heights, creating a Columbia community from the confines of our bedrooms. While not back in full swing, after 18 months we are back to campus, back to the Baker Athletics Complex, and most importantly, back to being a unified community. </p>
+            <p>At Spectator, we have used our year of remote learning to reevaluate what it means to be a Columbia student and a member of the greater Morningside Heights and West Harlem communities. Despite being back on campus, many students from all class years still struggle with feeling fully ingrained at Columbia. Homecoming weekend serves as a time to come together and to help find your community whether you are a first-year, senior, or even an alum.</p>
+            <p>Whether you are the biggest Columbia Lions fan out there, or have never stepped foot near a football stadium, we hope this edition shows you that Homecoming is more than just watching the Light Blue play against Penn. It’s about looking back at memories at the University, but also looking forward.</p>
+            <p>We invite you to take a look back on the stories that have shaped Homecoming this year, prepare for Saturday afternoon’s game, and reflect on the last 250 years of education and community. </p>
+            <p>Sarah Braka, <br></br>
+            Editor in Chief, President <br></br>
+            Lizzie Karpen, <br></br>
+            Managing Editor, Vice President</p>
+        </BodyWrapper>
     )
 }
 
