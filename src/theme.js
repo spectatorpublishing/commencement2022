@@ -7,9 +7,6 @@ const theme = {
       blue: "#4C90F7",
       gray: "#909090",
     },
-    borders: {
-        blue: "3px solid #4C90F7"
-    },
     sizes: {
       mobile: "767px",
       tablet: "992px",
