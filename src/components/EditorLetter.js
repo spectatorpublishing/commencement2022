@@ -15,11 +15,23 @@ const LetterWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: ${theme.sizes.mobile}) {
+      width: 93%;
+      border-radius: 15px;
+      margin: 1rem;
+      padding: 0;
+  }
 `;
 
 const BarWrapper = styled.div`
     height: fit-content;
     width: 88%;
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        height: fit-content;
+        width: 100%;
+    }
 `;
 
 const Row = styled.div`
@@ -34,6 +46,12 @@ const Row = styled.div`
         width: 100%;
         justify-content: space-around;
     }
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        height: 2rem;
+        margin: 0;
+        padding: 2rem .8rem 1rem;
+    }
 `;
 
 const Text = styled.p`
@@ -42,6 +60,11 @@ const Text = styled.p`
     font-weight: 400;
     font-size: 2rem;
     color: ${theme.colors.blue};
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        font-size: 1.2rem;
+        margin: 0;
+    }
 `;
 
 const LeftSide = styled.div`
@@ -50,6 +73,10 @@ const LeftSide = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        width: 4rem;
+    }
 `;
 
 const EmailWrapper = styled.div`
@@ -58,6 +85,11 @@ const EmailWrapper = styled.div`
     padding: 0 10%;
     background-color: ${theme.colors.white};
     font-family: "Lato";
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        width: 85%;
+        padding: 0 7.5%;
+    }
 `;
 
 const HeaderWrapper = styled.div`
@@ -65,9 +97,14 @@ const HeaderWrapper = styled.div`
     padding-bottom: 2rem;
     display: flex;
     flex-direction: row;
-    //background-color: pink;
     font-size: 2rem;
     border-bottom: 1px solid ${theme.colors.gray};
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        margin: 1rem 0 .5rem;
+        padding: 0;
+        font-size: 1.3rem;
+    }
 `;
 
 const Col = styled.div`
@@ -83,12 +120,23 @@ const Col = styled.div`
         min-height: fit-content;
         border-radius: 50px;
         background-color: ${theme.colors.gray};
+
+        @media (max-width: ${theme.sizes.mobile}) {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+        }
     }
 
     &.two {
         width: 50%;
         align-items: flex-start;
         padding: .5rem 0 0 2rem;
+
+        @media (max-width: ${theme.sizes.mobile}) {
+            width: 55%;
+            padding: .2rem 0 0 .8rem;
+        }
     }
 
     &.three {
@@ -109,7 +157,7 @@ const CDSLogo = styled.div`
     @media (max-width: ${theme.sizes.mobile}) {
         img {
             width: auto;
-            height: 1.4rem;
+            height: 1.5rem;
         }
     }
 `;
