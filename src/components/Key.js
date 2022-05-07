@@ -36,10 +36,13 @@ const KeyWrapper = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    width: 1.9rem;
-    height: 3rem;
-    margin: 0.15rem;
-    font-size: 0.75rem;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 2rem;
+    min-height: 2rem;
+    border-radius: 8px;
+    margin: 0.2rem 0.1rem;
+    font-size: .9rem;
 
     &.big {
       width: 3.1rem;

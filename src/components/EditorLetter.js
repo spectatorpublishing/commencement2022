@@ -40,8 +40,8 @@ const Row = styled.div`
     margin: 2.5rem .5rem .5rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding-bottom: 2rem;
+    align-items: flex-end;
 
     &.icons {
         width: 100%;
@@ -68,7 +68,7 @@ const Text = styled.p`
 
     @media (max-width: ${theme.sizes.mobile}) {
         font-size: 1.2rem;
-        margin: 0;
+        margin: 0 0 0 0.3rem;
     }
 `;
 
@@ -193,6 +193,7 @@ const BodyWrapper = styled.div`
 
 const IconWrapper = styled.div`
     align-self: flex-end;
+    justify-self: center;
     font-size: 2.5rem;
     color: ${theme.colors.blue};
 
@@ -203,24 +204,11 @@ const IconWrapper = styled.div`
     }
 
     @media (max-width: ${theme.sizes.mobile}) {
-        width: 25px;
-        height: 25px;
+        font-size: 1rem;
 
-        &>svg {
-            width: 25px;
-            height: 25px;
-        }
-
-        &.small {
-            text-align: right;
-            width: 25px;
-            height: 25px;
+        &.attach {
+            font-size: .9rem;
             margin-top: .2rem;
-
-            &>svg {
-                width: 20px;
-                height: 20px;
-            }
         }
     }
 `;

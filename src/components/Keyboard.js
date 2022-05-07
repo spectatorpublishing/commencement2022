@@ -42,6 +42,10 @@ const Line = styled.div`
   &.icons {
       justify-content: space-between;
   }
+
+  @media (max-width: ${theme.sizes.mobile}) {
+      width: 92%;
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -51,6 +55,11 @@ const IconWrapper = styled.div`
   font-size: 5rem;
   display: grid;
   place-items: center;
+
+  @media (max-width: ${theme.sizes.mobile}) {
+      height: 35px;
+      font-size: 1rem;
+  }
 `;
 
 const isActive = (key) => {
