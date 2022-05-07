@@ -1,7 +1,8 @@
 import React from "react";
 import styled from 'styled-components/macro';
 import theme from "../theme";
-import { Icon, Attach } from "./Icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleLeft, faAngleDown, faAngleUp, faPaperclip, faBoxArchive, faFolder, faReply, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 const LetterWrapper = styled.div`
   height: fit-content;
@@ -190,15 +191,55 @@ const BodyWrapper = styled.div`
     }
 `;
 
+const IconWrapper = styled.div`
+    align-self: flex-end;
+    font-size: 2.5rem;
+    color: ${theme.colors.blue};
+
+    &.attach {
+        text-align: end;
+        font-size: 2rem;
+        color: ${theme.colors.gray};
+    }
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        width: 25px;
+        height: 25px;
+
+        &>svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        &.small {
+            text-align: right;
+            width: 25px;
+            height: 25px;
+            margin-top: .2rem;
+
+            &>svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+`;
+
 const TopBar = () => {
     return (
         <BarWrapper>
             <Row>
-                <Icon left></Icon>
+                <IconWrapper>
+                    <FontAwesomeIcon icon={faAngleLeft}></FontAwesomeIcon>
+                </IconWrapper>
                 <Text>Sent</Text>
                 <LeftSide>
-                    <Icon up></Icon>
-                    <Icon down></Icon>
+                    <IconWrapper>
+                        <FontAwesomeIcon icon={faAngleDown}></FontAwesomeIcon>
+                    </IconWrapper>
+                    <IconWrapper>
+                        <FontAwesomeIcon icon={faAngleUp}></FontAwesomeIcon>
+                    </IconWrapper>
                 </LeftSide>
             </Row>
         </BarWrapper>
@@ -220,7 +261,9 @@ const EmailHeader = () => {
             </Col>
             <Col className="three">
                 <h2>5/18/22</h2>
-                <Attach></Attach>
+                <IconWrapper className="attach">
+                    <FontAwesomeIcon icon={faPaperclip}></FontAwesomeIcon>
+                </IconWrapper>
             </Col>
         </HeaderWrapper>
     )
@@ -246,10 +289,18 @@ const EmailBody = () => {
 const BottomBar = () => {
     return (
         <Row className="icons">
-            <Icon read></Icon>
-            <Icon archive></Icon>
-            <Icon reply></Icon>
-            <Icon new></Icon>
+            <IconWrapper>
+                <FontAwesomeIcon icon={faBoxArchive}></FontAwesomeIcon>
+            </IconWrapper>
+            <IconWrapper>
+                <FontAwesomeIcon icon={faFolder}></FontAwesomeIcon>
+            </IconWrapper>
+            <IconWrapper>
+                <FontAwesomeIcon icon={faReply}></FontAwesomeIcon>
+            </IconWrapper>
+            <IconWrapper>
+                <FontAwesomeIcon icon={faPenToSquare}></FontAwesomeIcon>
+            </IconWrapper>
         </Row>
     )
 }

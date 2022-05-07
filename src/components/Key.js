@@ -1,6 +1,8 @@
 import React from "react";
 import styled from 'styled-components/macro';
 import theme from "../theme";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDeleteLeft, faCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 const KeyWrapper = styled.div`
   width: 5.5rem;
@@ -16,13 +18,21 @@ const KeyWrapper = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   font-family: 'Lato';
 
-  &.big {
-    width: 4.5rem;
-  }
-
   &.active {
     background-color: ${theme.colors.blue};
     color: ${theme.colors.white};
+  }
+
+  &.gray {
+    background-color: ${theme.colors.keyGray};
+  }
+
+  &.fill {
+      width: 50%;
+  }
+
+  &.wide {
+      width: 25%;
   }
 
   @media only screen and (max-width: 768px) {
@@ -37,25 +47,13 @@ const KeyWrapper = styled.div`
   }
 `
 
-const Shift = () => {
-    return (
-        <></>
-    )
-}
-
-const Del = () => {
-    return (
-        <></>
-    )
-}
-
-const Key = ({ keyVal, active, shift, del }) => {
+const Key = ({ keyVal, active, shift, del, blank, num, enter }) => {
     return (
         <KeyWrapper
-            className={active ? "active" : null}
+            className={active ? "active" : del ? "gray" : blank ? "fill" : (num || enter) ? "gray wide" : null}
         >
-            {shift ? <Shift></Shift>
-            : del ? <Del></Del>
+            {shift ? <FontAwesomeIcon icon={faCircleUp} />
+            : del ? <FontAwesomeIcon icon={faDeleteLeft}/>
             : null}
             {keyVal}
         </KeyWrapper>

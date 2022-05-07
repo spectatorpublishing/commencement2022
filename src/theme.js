@@ -6,7 +6,8 @@ const theme = {
       lightGray: "#EFEFEF",
       blue: "#4C90F7",
       gray: "#909090",
-      darkGray: "#D5D8DD"
+      darkGray: "#D5D8DD",
+      keyGray: "#B4B8C0"
     },
     sizes: {
       mobile: "767px",

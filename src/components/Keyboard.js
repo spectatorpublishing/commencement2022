@@ -2,6 +2,8 @@ import React from "react";
 import styled from 'styled-components/macro';
 import theme from "../theme";
 import Key from "./Key";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFaceSmile, faMicrophone } from '@fortawesome/free-solid-svg-icons';
 
 const KEYS1 = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"];
 const KEYS2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"];
@@ -35,6 +37,20 @@ const Line = styled.div`
   flex-direction: row;
   display: flex;
   justify-content: center;
+  width: 80%;
+
+  &.icons {
+      justify-content: space-between;
+  }
+`;
+
+const IconWrapper = styled.div`
+  width: 25%;
+  height: 135px;
+  color: ${theme.colors.black};
+  font-size: 5rem;
+  display: grid;
+  place-items: center;
 `;
 
 const isActive = (key) => {
@@ -60,6 +76,19 @@ const Keyboard = () => {
                     return <Key keyVal={key} active={isActive(key)}></Key>
                 })}
                 <Key del></Key>
+            </Line>
+            <Line>
+                <Key keyVal="123" num></Key>
+                <Key blank></Key>
+                <Key keyVal="Return" enter></Key>
+            </Line>
+            <Line className="icons">
+                <IconWrapper>
+                    <FontAwesomeIcon icon={faFaceSmile} />
+                </IconWrapper>
+                <IconWrapper>
+                    <FontAwesomeIcon icon={faMicrophone} />
+                </IconWrapper>
             </Line>
         </KeyboardWrapper>
     )
