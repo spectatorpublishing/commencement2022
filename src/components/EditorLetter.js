@@ -51,6 +51,10 @@ const Row = styled.div`
         height: 2rem;
         margin: 0;
         padding: 2rem .8rem 1rem;
+
+        &.icons {
+            padding: 1rem .8rem 1.5rem;
+        }
     }
 `;
 
@@ -102,7 +106,7 @@ const HeaderWrapper = styled.div`
 
     @media (max-width: ${theme.sizes.mobile}) {
         margin: 1rem 0 .5rem;
-        padding: 0;
+        padding-bottom: .6rem;
         font-size: 1.3rem;
     }
 `;
@@ -125,6 +129,8 @@ const Col = styled.div`
             width: 40px;
             height: 40px;
             border-radius: 20px;
+            padding: 0;
+            margin: 0;
         }
     }
 
@@ -134,14 +140,19 @@ const Col = styled.div`
         padding: .5rem 0 0 2rem;
 
         @media (max-width: ${theme.sizes.mobile}) {
-            width: 55%;
-            padding: .2rem 0 0 .8rem;
+            width: 65%;
+            padding: 0rem 0 0 .8rem;
+            
         }
     }
 
     &.three {
         margin-left: auto;
         padding: .5rem 0 0;
+
+        @media (max-width: ${theme.sizes.mobile}) {
+            padding: 0;
+        }
     }
 `;
 
@@ -172,6 +183,11 @@ const BodyWrapper = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        margin: 0;
+        padding-bottom: 1rem;
+    }
 `;
 
 const TopBar = () => {
