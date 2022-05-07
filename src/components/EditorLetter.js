@@ -209,7 +209,7 @@ const EmailHeader = () => {
     return (
         <HeaderWrapper>
             <Col className="one">
-                <CDSLogo><img src="https://doordle.s3.amazonaws.com/whitecrown.png"/></CDSLogo>
+                <CDSLogo><img src="https://doordle.s3.amazonaws.com/whitecrown.png" alt="Columbia Daily Spectator white crown logo"/></CDSLogo>
             </Col>
             <Col className="two">
                 <h3>Columbia Spectator</h3>
