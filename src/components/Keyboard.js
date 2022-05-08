@@ -13,11 +13,12 @@ const ACTIVE_KEYS = new Set(["C", "O", "L", "U", "M", "B", "I", "A"]);
 const KeyboardWrapper = styled.div`
   height: fit-content;
   min-height: 60%;
-  width: 85%;
-  border-radius: 90px;
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
   background-color: ${theme.colors.darkGray};
   align-self: center;
-  margin: 4rem;
+  margin: 0 4rem;
   padding: 2.5rem 0 4rem;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,7 @@ const Line = styled.div`
 const IconWrapper = styled.div`
   width: 25%;
   height: 135px;
-  color: ${theme.colors.black};
+  color: ${theme.colors.gray};
   font-size: 5rem;
   display: grid;
   place-items: center;

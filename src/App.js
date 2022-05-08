@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import theme from "./theme";
 import Letter from './components/EditorLetter';
-import Keyboard from './components/Keyboard';
+import TextConvo from './components/TextConvo';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -15,7 +15,7 @@ const HomeContainer = styled.div`
 const App = () => (
     <HomeContainer>
       <Letter />
-      <Keyboard />
+      <TextConvo />
     </HomeContainer>
 );
 
