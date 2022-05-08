@@ -25,10 +25,8 @@ const KeyboardWrapper = styled.div`
   align-items: center;
 
   @media (max-width: ${theme.sizes.mobile}) {
-      width: 93%;
-      border-radius: 15px;
-      margin: 1rem;
-      padding: 0;
+      margin: 0 1rem;
+      padding: .8rem 0 0 0;
   }
 `;
 

@@ -40,6 +40,11 @@ const TypingBar = styled.div`
     font-size: 2rem;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        height: 2rem;
+        padding: .2rem 0;
+    }
 `;
 
 const IconWrapper = styled.div`
@@ -52,7 +57,7 @@ const IconWrapper = styled.div`
 
   @media (max-width: ${theme.sizes.mobile}) {
       height: 35px;
-      font-size: 1rem;
+      font-size: 1.5rem;
   }
 `;
 
@@ -67,6 +72,23 @@ const TypingBubble = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 4rem;
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        width: 60%;
+        height: 1.8rem;
+        font-size: 1.3rem;
+        padding-left: .8rem;
+    }
+`;
+
+const TypingText = styled.div`
+    padding-right: .4rem;
+    border-right: 3px solid ${theme.colors.blue};
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        padding-right: .2rem;
+        border-right: 2px solid ${theme.colors.blue};
+    }
 `;
 
 const SendBubble = styled.div`
@@ -77,6 +99,12 @@ const SendBubble = styled.div`
     margin-right: .6rem;
     text-align: center;
     color: ${theme.colors.white};
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: .2rem;
+    }
 `;
 
 const TextConvo = () => {
@@ -92,7 +120,7 @@ const TextConvo = () => {
                     <FontAwesomeIcon icon={faAppStoreIos} ></FontAwesomeIcon>
                 </IconWrapper>
                 <TypingBubble>
-                    <div>Columbia</div>
+                    <TypingText>Columbia</TypingText>
                     <SendBubble>
                         <FontAwesomeIcon icon={faArrowUp} ></FontAwesomeIcon>
                     </SendBubble>
