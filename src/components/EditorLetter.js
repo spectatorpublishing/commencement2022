@@ -46,6 +46,7 @@ const Row = styled.div`
     &.icons {
         width: 100%;
         justify-content: space-around;
+        padding-bottom: 1rem;
     }
 
     @media (max-width: ${theme.sizes.mobile}) {
@@ -60,7 +61,7 @@ const Row = styled.div`
 `;
 
 const Text = styled.p`
-    margin: 0 0 0 .5rem;
+    margin: auto 0 auto .5rem;
     font-family: "Lato";
     font-weight: 400;
     font-size: 2rem;
@@ -177,6 +178,10 @@ const CDSLogo = styled.div`
 const ObjectLine = styled.div`
     display: flex;
     flex-direction: row;
+
+    h2 {
+        margin-right: 0.4rem;
+    }
 `;
 
 const BodyWrapper = styled.div`
@@ -194,7 +199,7 @@ const BodyWrapper = styled.div`
 const IconWrapper = styled.div`
     align-self: flex-end;
     justify-self: center;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: ${theme.colors.blue};
 
     &.attach {
@@ -243,8 +248,8 @@ const EmailHeader = () => {
             <Col className="two">
                 <h3>Columbia Spectator</h3>
                 <ObjectLine>
-                    <h2 style={{color:theme.colors.black}}>To:</h2>
-                    <h2>Class of 2022</h2>
+                    <h2 style={{color:theme.colors.black}}>To: </h2>
+                    <h2> Class of 2022</h2>
                 </ObjectLine>
             </Col>
             <Col className="three">

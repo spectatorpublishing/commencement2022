@@ -48,10 +48,10 @@ const TypingBar = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  width: 15%;
+  width: 12%;
   height: 100%;
   color: ${theme.colors.gray};
-  font-size: 5rem;
+  font-size: 5.5rem;
   display: grid;
   place-items: center;
 
@@ -62,7 +62,7 @@ const IconWrapper = styled.div`
 `;
 
 const TypingBubble = styled.div`
-    width: 50%;
+    width: 60%;
     height: 6rem;
     border-radius: 90px;
     border: 1px solid ${theme.colors.keyGray};
@@ -72,6 +72,7 @@ const TypingBubble = styled.div`
     align-items: center;
     justify-content: space-between;
     font-size: 4rem;
+    margin-left: 1rem;
 
     @media (max-width: ${theme.sizes.mobile}) {
         width: 60%;

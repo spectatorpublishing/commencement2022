@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDeleteLeft, faCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 const KeyWrapper = styled.div`
-  width: 5.5rem;
-  height: 7rem;
+  width: 6.5rem;
+  height: 8rem;
   margin: .7rem .3rem;
   border-radius: 25px;
   display: grid;
   place-items: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 400;
   background-color: ${theme.colors.white};
   color: ${theme.colors.black};
@@ -36,13 +36,27 @@ const KeyWrapper = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    width: 1.5rem;
+    width: 2.5rem;
     min-width: 1.5rem;
-    height: 2rem;
+    height: 3.5rem;
     min-height: 2rem;
     border-radius: 8px;
     margin: 0.2rem 0.1rem;
-    font-size: .9rem;
+    font-size: 1.2rem;
+
+    &.big {
+      width: 3.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    width: 1.5rem;
+    min-width: 1.5rem;
+    height: 4rem;
+    min-height: 2rem;
+    border-radius: 8px;
+    margin: 0.2rem 0.1rem;
+    font-size: 2rem;
 
     &.big {
       width: 3.1rem;
