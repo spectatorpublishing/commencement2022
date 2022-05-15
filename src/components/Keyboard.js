@@ -19,7 +19,7 @@ const KeyboardWrapper = styled.div`
   background-color: ${theme.colors.darkGray};
   align-self: center;
   margin: 0 4rem;
-  padding: 2.5rem 0 4rem;
+  padding: 2.5rem 0 2rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,10 +36,11 @@ const Line = styled.div`
   flex-direction: row;
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 90%;
 
   &.icons {
-      justify-content: space-between;
+    margin-top: 1rem;
+    justify-content: space-between;
   }
 
   @media (max-width: ${theme.sizes.mobile}) {
