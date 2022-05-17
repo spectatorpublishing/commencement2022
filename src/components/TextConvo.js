@@ -5,6 +5,7 @@ import Keyboard from "./Keyboard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
+import TextConvoHeader from "./TextConvoHeader";
 
 const TextConvoWrapper = styled.div`
   height: fit-content;
@@ -27,7 +28,9 @@ const TextConvoWrapper = styled.div`
   }
 `;
 
-const HeaderWrapper = styled.div``;
+const HeaderWrapper = styled.div`
+  width: 100%;
+`;
 
 const TextsWrapper = styled.div``;
 
@@ -111,7 +114,9 @@ const SendBubble = styled.div`
 const TextConvo = () => {
     return (
         <TextConvoWrapper>
-            <HeaderWrapper></HeaderWrapper>
+            <HeaderWrapper>
+                <TextConvoHeader/>
+            </HeaderWrapper>
             <TextsWrapper></TextsWrapper>
             <TypingBar>
                 <IconWrapper>
