@@ -11,7 +11,7 @@ const LetterWrapper = styled.div`
   border-radius: 90px;
   background-color: ${theme.colors.lightGray};
   align-self: center;
-  margin: 4rem;
+  margin: 8rem 4rem 4rem 4rem;
   padding: 2.5rem 0 4rem;
   display: flex;
   flex-direction: column;

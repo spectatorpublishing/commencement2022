@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 const BubbleWrapper = styled.div`
     width: fit-content;
+    list-style: none;
 
     &.sent {
         margin-left: auto;
@@ -18,14 +19,17 @@ const Bubble = styled.li`
     --sentColor: #0b93f6;
     --receiveColor: #e5e5ea;
 
+    font-size: 2.5rem;
+    max-width: 450px;
+
     z-index: 1;
     position: relative;
-    max-width: 150px;
+    
     width: fit-content;
     margin-bottom: 15px;
-    padding: 10px 20px;
+    padding: 1rem 2.5rem;
     word-wrap: break-word;
-    border-radius: 25px;
+    border-radius: 50px;
       
     &:before {
         width: 20px;
@@ -91,27 +95,29 @@ const Bubble = styled.li`
 const Icon = styled.div`
     position: relative;
     width: fit-content;
-    margin-bottom: -1.5rem;
+    margin-bottom: -2.2rem;
     z-index: 99;
 
     &.received {
         margin-left: auto;
-        margin-right: -1rem;
+        margin-right: -1.4rem;
     }
 
     &.sent {
         margin-right: auto;
-        margin-left: -1rem;
+        margin-left: -1.9rem;
     }
 `
 
 const TextBubble = ({text, status, reaction, isLast}) => {
 
+    const width = "3.5rem";
+
     const reactions = {
-        "heartTitle" : <HeartIcon width="2rem" title={true}/>,
-        "heart": <HeartIcon width="2rem" title={false}/>,
-        "haha" : <HahaIcon width="2rem"/>,
-        "thumbs" : <ThumbsIcon width="2rem"/>
+        "heartTitle" : <HeartIcon width={width} title={true}/>,
+        "heart": <HeartIcon width={width} title={false}/>,
+        "haha" : <HahaIcon width={width}/>,
+        "thumbs" : <ThumbsIcon width={width}/>
     }
 
     return (

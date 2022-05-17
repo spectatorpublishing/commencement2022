@@ -7,7 +7,6 @@ const Bubbles = styled.div`
     display: flex;
     flex-direction: column;
     width: 100vw;
-    list-style: none;
 `;
 
 const Messages = () => {
