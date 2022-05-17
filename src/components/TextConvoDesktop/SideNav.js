@@ -8,9 +8,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     background-color: ${theme.colors.lightGray};
-    width: fit-content;
+    width: 30%;
     padding: 2rem 1rem 2rem 2rem;
-    border-radius: 70px 0px 0px 70px;
+    border-radius: 45px 0px 0px 45px;
 `;
 
 const MenuItemWrap = styled.div`
