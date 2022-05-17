@@ -3,7 +3,7 @@ import styled from "styled-components";
 import articles from "../../data/articles";
 
 const Wrapper = styled.div`
-    min-width: 70%;
+    min-width: 50%;
 `;
 
 const Articles = ({selectedSection}) => {

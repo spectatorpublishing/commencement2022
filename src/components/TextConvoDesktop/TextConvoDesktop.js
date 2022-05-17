@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     display: flex;
     width: 85%;
     margin: 1rem auto;
+    border-radius: 90px;
 `;
 
 const sections = {
