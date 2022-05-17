@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 import theme from "./theme";
 import Letter from './components/EditorLetter';
 import TextConvo from './components/TextConvo';
+import Messages from './components/TextBubblesExample';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -16,6 +17,7 @@ const App = () => (
     <HomeContainer>
       <Letter />
       <TextConvo />
+      <Messages/>
     </HomeContainer>
 );
 
