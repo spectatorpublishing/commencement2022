@@ -5,6 +5,7 @@ import theme from "./theme";
 import Credits from './components/Credits';
 import Letter from './components/EditorLetter';
 import TextConvo from './components/TextConvo';
+import Messages from './components/TextBubblesExample';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -19,6 +20,7 @@ const App = () => (
       <Letter />
       <TextConvo />
       <Credits />
+      <Messages/>
     </HomeContainer>
 );
 
