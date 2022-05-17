@@ -76,7 +76,7 @@ const panel2 = ["Design and Development", "Illustrations"]
 
 const Section = (props) => {
     var creditsList = []
-    console.log("section:", props.section)
+    
     if (props.section !== undefined) {
         creditsList = staff[props.section].map((person) => (
             <NameLine>

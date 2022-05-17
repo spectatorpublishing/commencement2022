@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components/macro';
-import theme from "../theme";
-import Keyboard from "./Keyboard";
+import theme from "../../theme";
+import Keyboard from "../Keyboard/Keyboard";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faAppStoreIos } from '@fortawesome/free-brands-svg-icons';

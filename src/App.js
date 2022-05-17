@@ -4,9 +4,11 @@ import theme from "./theme";
 
 import Credits from './components/Credits';
 import Letter from './components/EditorLetter';
-import TextConvo from './components/TextConvo';
+import TextConvo from './components/TextConvoMobile/TextConvo';
+import TextConvoDesktop from './components/TextConvoDesktop/TextConvoDesktop';
 import Messages from './components/TextBubblesExample';
 import TitleHeader from './components/TitleHeader';
+import TextBubble from './components/TextBubble';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -16,11 +18,26 @@ const HomeContainer = styled.div`
   background-color: ${theme.colors.lightBlue};
 `;
 
+const SectionTitle = styled.div`
+  width: fit-content;
+  margin: 5rem auto 0rem auto;
+`;
+
 const App = () => (
     <HomeContainer>
       <TitleHeader/>
+      <SectionTitle>
+        <TextBubble status={"sent"} isLast={false} text={"Letter to the Editor"}/>
+      </SectionTitle>
       <Letter />
+      <SectionTitle>
+        <TextBubble status={"sent"} isLast={false} text={"Articles"}/>
+      </SectionTitle>
+      <TextConvoDesktop/>
       <TextConvo />
+      <SectionTitle>
+        <TextBubble status={"sent"} isLast={false} text={"Credits"}/>
+      </SectionTitle>
       <Credits />
       <Messages/>
     </HomeContainer>

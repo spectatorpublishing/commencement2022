@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBatteryThreeQuarters, faChevronRight, faSignal, faWifi } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import styled from "styled-components";
-import theme from "../theme";
+import theme from "../../theme";
 
 const HeaderWrapper = styled.div`
     width: 100%;

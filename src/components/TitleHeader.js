@@ -8,6 +8,7 @@ const HeaderWrapper = styled.div`
     background-color: ${theme.colors.white};
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 `;
 
 const ItemsWrapper = styled.div`
@@ -56,7 +57,6 @@ const TitleImage = styled.div`
     height: 80vh;
     width: 100%;
     background-color: grey;
-
 `;
 
 const TitleHeader = () => {

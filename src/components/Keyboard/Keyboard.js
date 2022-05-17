@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components/macro';
-import theme from "../theme";
+import theme from "../../theme";
 import Key from "./Key";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFaceSmile, faMicrophone } from '@fortawesome/free-solid-svg-icons';
