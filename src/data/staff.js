@@ -6,15 +6,10 @@ const staff = {
     ],
     
     "Design and Development": [
-        "Victoria Geh, Head of Newsroom Development",
-        "Hong Du, Senior Newsroom Development",
-        "Patrick Puma, Deputy Newsroom Development",
-        "Elaine Lee, Newsroom Developer",
-        "James Yiu, Newsroom Developer",
-        "Noah Bergam, Newsroom Developer",
+        "Laura Castro Venegas, Head of Engineering",
+        "Francesca Cavuoti, Engineering Manager",
         "Philippe Wu, Head of Product",
-        "Christina Su, Product Manager",
-        "Anissa Arakal, Product Designer"
+        "HeeSoo Park, Product Designer"
     ],
 
     "Cover Illustration By": [

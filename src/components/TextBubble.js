@@ -5,6 +5,7 @@ import { useState } from 'react'
 const BubbleWrapper = styled.div`
     width: fit-content;
     list-style: none;
+    margin: -2rem 1rem 2rem 1rem;
 
     &.sent {
         margin-left: auto;
@@ -19,7 +20,7 @@ const Bubble = styled.li`
     --sentColor: #0b93f6;
     --receiveColor: #e5e5ea;
 
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     max-width: 450px;
 
     z-index: 1;
@@ -27,7 +28,7 @@ const Bubble = styled.li`
     
     width: fit-content;
     margin-bottom: 15px;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
     word-wrap: break-word;
     border-radius: 50px;
       
@@ -36,8 +37,8 @@ const Bubble = styled.li`
     }
     
     &:after {
-        width: 26px;
-        background-color: #bfd7e9;
+        width: 10px;
+        background-color: white;
     }
     
     &:before,
@@ -69,7 +70,7 @@ const Bubble = styled.li`
         }
       
         &:after {
-          right: -26px;
+          right: -10px;
           border-bottom-left-radius: 10px;
         }
     }
@@ -86,7 +87,7 @@ const Bubble = styled.li`
         }
       
         &:after {
-          left: -26px;
+          left: -10px;
           border-bottom-right-radius: 10px;
         }
     }
@@ -95,7 +96,7 @@ const Bubble = styled.li`
 const Icon = styled.div`
     position: relative;
     width: fit-content;
-    margin-bottom: -2.2rem;
+    margin-bottom: -1.7rem;
     z-index: 99;
 
     &.received {
@@ -105,19 +106,19 @@ const Icon = styled.div`
 
     &.sent {
         margin-right: auto;
-        margin-left: -1.9rem;
+        margin-left: -1.8rem;
     }
 `
 
 const TextBubble = ({text, status, reaction, isLast}) => {
 
-    const width = "3.5rem";
+    const width = "2.5rem";
 
     const reactions = {
         "heartTitle" : <HeartIcon width={width} title={true}/>,
         "heart": <HeartIcon width={width} title={false}/>,
         "haha" : <HahaIcon width={width}/>,
-        "thumbs" : <ThumbsIcon width={width}/>
+        "like" : <ThumbsIcon width={width}/>
     }
 
     return (

@@ -24,7 +24,7 @@ const sections = {
         color: theme.colors.pink,
         shortName: "N",
         time: "9:44 am",
-        message: 'You liked "Commencement Day!"'
+        message: 'You loved "Commencement Day!"'
     },
     "Opinion": {
         section: "Opinion",
@@ -45,7 +45,7 @@ const sections = {
         color: theme.colors.red,
         shortName: "S",
         time: "8:03 am",
-        message: 'You liked "I\'m taking lots of pics!"'
+        message: 'You loved "I\'m taking lots of pics!"'
     },
     "Miscellaneous": {
         section: "Miscellaneous",

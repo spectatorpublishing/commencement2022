@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TextBubble from "./TextBubble";
+import TextBubbleTitle from "./TextBubbleTitle";
 import theme from "../theme";
 
 const HeaderWrapper = styled.div`
@@ -64,7 +64,7 @@ const TitleHeader = () => {
         <HeaderWrapper>
             <ItemsWrapper>
                 <LeftTitle>
-                    <TextBubble status="sent" reaction="heartTitle" isLast={false} isTitle={true} text="Class of 2022"/>
+                    <TextBubbleTitle status="sent" reaction="heartTitle" isLast={false} isTitle={true} text="Class of 2022"/>
                 </LeftTitle>
                 <CenterLogo>
                     <Logo>
@@ -73,7 +73,7 @@ const TitleHeader = () => {
                     <ColumbiaText>Columbia</ColumbiaText>
                 </CenterLogo>
                 <RightTitle>
-                <TextBubble status="sent" isLast={false} isTitle={true} text="Commencement"/>
+                <TextBubbleTitle status="sent" isLast={false} isTitle={true} text="Commencement"/>
                 </RightTitle>
             </ItemsWrapper>
             <TitleImage>
