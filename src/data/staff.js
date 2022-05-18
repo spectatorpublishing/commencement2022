@@ -12,8 +12,8 @@ const staff = {
         "HeeSoo Park, Product Designer"
     ],
 
-    "Cover Illustration By": [
-        "Sadia Sharif, Deputy Illustrations Editor"
+    "Cover Photo By": [
+        "Millie Felder, Senior Staff Photographer"
     ],
 
     "Illustrations": [
@@ -21,70 +21,53 @@ const staff = {
         "Julian Michaud, Deputy Illustrations Editor",
         "Liza Evseeva, Deputy Illustrations Editor",
         "Noelle Hunter, Deputy Illustrations Editor",
-        "Carlos Ochoa, Staff Illustrator",
-        "Chiara Guigou, Staff Illustrator",
-        "Ji Yoon Sim, Staff Illustrator",
-        "Katya Reichert, Staff Illustrator",
-        "Magan Chin, Staff Illustrator",
-        "Marion Kamara, Staff Illustrator",
-        "Natalie Tak, Staff Illustrator",
-        "Tejasri Vijayakumar, Staff Illustrator",
-        "Tina Wang, Staff Illustrator"
-    ],
-
-    "The Eye": [
-        "Annie Cheng, Eye Managing Editor",
-        "Derek Ng, Eye Managing Editor",
-        "Lilienne Shore Kilgore-Brown, Features Editor",
-        "Meg Lunny, Leads Editor",
-        "Bella Aldrete, View From Here Editor",
-        "Mel Wang, Staff Writer"
+        "Sadia Sharif, Deputy Illustrations Editor"
     ],
 
     "Sports": [
         "Miles Schachner, Sports Editor",
-        "Jorge Hernandez, Deputy Editor",
-        "Stephen Dames, Deputy Editor",
-        "Robert Gao, Deputy Editor",
-        "Matthew Kim, Staff Writer",
-        "Rebecca Wachen, Staff Writer",
-        "Takashi Williams, Staff Writer"
+        "Jorge Hernandez, Deputy Sports Editor",
+        "Robert Gao, Deputy Sports Editor",
+        "Stephen Dames, Deputy Sports Editor",
+        "Rebecca Wachen, Senior Staff Writer",
+        "Matthew Kim, Senior Staff Writer",
+        "Takashi Williams, Staff Writer",
+        "Caleb Dye, Staff Writer",
+        "Annelie Hyatt, Staff Writer",
+        "Bernard Wang, Staff Writer",
+        "Alejandra García Corominas, Staff Writer"
     ],
 
     "Graphics": [
-        "Jessica Li, Graphics Editor",
-        "Andrew Park"
+        "Andrew Park, Graphics Editor"
     ],
 
     "Photo": [
-        "Miles Schachner, Sports Editor",
-        "Jorge Hernandez, Deputy Editor",
-        "Stephen Dames, Deputy Editor",
-        "Robert Gao, Deputy Editor",
-        "Matthew Kim, Staff Writer",
-        "Rebecca Wachen, Staff Writer",
-        "Takashi Williams, Staff Writer"
+        "Millie Felder, Photo Editor",
+        "Kate Della Pietra, Deputy Photo Editor",
+        "Samantha Camacho, Deputy Photo Editor",
+        "Alex Kieu, Deputy Photo Editor",
+        "Kat St. Martin, Deputy Photo Editor",
+        "Beatrice Shlansky, Senior Staff Photographer",
+        "Rommel Nunez, Senior Staff Photographer",
+        "Soleil Guevara, Staff Photographer",
+        "Judy Goldstein, Staff Photographer",
+        "Ryan Newberger, Staff Photographer",
+        "Caitlin Buckley, Staff Photographer",
+        "Margaret Maguire, Staff Photographer",
+        "Yash Mangalick, Staff Photographer",
+        "Jane Mok, Staff Photographer"
     ],
 
-    "University News": [
+    "News": [
         "Irie Sentner, University News Editor",
         "Zach Schermele, Deputy News Editor",
         "Stella Pagkas, Deputy News Editor",
-        "Adam Frommer, Staff Writer",
-        "Isabella Ramírez, Staff Writer",
-        "Rainier Harris, Staff Writer"
-    ],
-
-    "City News": [
-        "Faith Andrews-O’Neal, City News Editor",
-        "Maya Mitrasinovic, City News Editor",
-        "Alice Tecotzky, Deputy News Editor",
-        "Victor Swezey, Staff Writer",
-        "Claire Hunt, Staff Writer",
-        "Lucy Brenner, Staff Writer",
-        "Aissatou Diallo, Staff Writer",
-        "Wena Teng, Staff Writer",
-        "Charlotte Buttenwieser, Staff Writer"
+        "Esther Sun, Staff writer",
+        "Sarah Huddleston, Staff writer",
+        "Rainier Harris, Staff writer",
+        "Lila Negesse, Staff writer",
+        "Esha Karam, Staff writer"
     ],
 
     "Copy": [
@@ -95,84 +78,55 @@ const staff = {
         "Maria Levit, Deputy Copy Editor",
         "Jonah Pitkowsky, Deputy Copy Editor",
         "Harry Shi, Deputy Copy Editor",
-        "Renuka Balakrishnan, Associate Copy Editor",
-        "Sam Barnett, Associate Copy Editor",
-        "Rachel Borshchenko, Associate Copy Editor",
-        "Adam Burns, Associate Copy Editor",
-        "Ronit Dhulia, Associate Copy Editor",
-        "Ana Eveleigh, Associate Copy Editor",
-        "Madison Guzy, Associate Copy Editor",
-        "Sadie Rochman, Associate Copy Editor",
-        "Noyna Roy, Associate Copy Editor",
-        "Yvin Shin, Associate Copy Editor",
-        "Abby Sim, Associate Copy Editor",
-        "Natarsha Yan, Associate Copy Editor",
-        "Bonnie Yang, Associate Copy Editor",
-        "Safia Aladlouni, Preslotter",
-        "Emma Grungold, Preslotter",
-        "Willa Nagy, Preslotter",
-        "Grace O'Malley, Preslotter",
-        "Maya Platek, Preslotter",
-        "Leif Wood, Preslotter",
-        "Lanah Wyne, Preslotter"
-    ],
-
-    "Photo": [
-        "Millie Felder, Photo Editor",
-        "Kate Della Pietra, Deputy Photo Editor",
-        "Samantha Camacho, Deputy Photo Editor",
-        "Kat St. Martin, Deputy Photo Editor",
-        "Alex Kieu, Deputy Photo Editor",
-        "Rommel Nunez, Senior Staff Photographer",
-        "Pippa Tsuki Carlson, Staff Photographer",
-        "Gabi Levy, Staff Photographer",
-        "Shannon Binns, Staff Photographer",
-        "Annie Son, Staff Photographer",
-        "Caitlin Buckley, Staff Photographer",
-        "Jane Mok, Staff Photographer",
-        "Emma Snoddy, Staff Photographer"
+        "Renuka Balakrishnan, Deputy Copy Editor",
+        "Ronit Dhulia, Deputy Copy Editor",
+        "Emily Stone, Preslotter"
     ],
 
     "Opinion": [
         "Senem Yurdakul, Editorial Page Editor",
-        "Ryan Oden, Admin Deputy Editor",
-        "Sean Conlon, Admin Deputy Editor",
-        "Karlton Gaskin, City Deputy Editor",
-        "Julian Novarr, Contributor Deputy Editor",
-        "Lauren Zhou, Student Life Deputy Editor",
+        "Karlton Gaskin, Deputy Editorial Page Editor",
+        "Julian Novarr, Deputy Editorial Page Editor",
+        "Lauren Zhou, Deputy Editorial Page Editor",
         "Celeste Ramirez, Senior Associate",
-        "Sara Chough, Senior Associate",
-        "Melanie Cheung, Senior Associate",
-        "Michaela Fleischer, Senior Associate",
-        "Sydney Goldson, Senior Associate",
         "Maria Rice, Senior Associate",
-        "Milene Klein, Senior Associate",
-        "Eki Uzamere, Associate",
-        "Tori Sproat, Associate",
-        "Julien Roa, Associate"
+        "Melanie Cheung, Senior Associate",
+        "Milène Klein, Senior Associate",
+        "Sara Chough, Senior Associate",
+        "Sydney Goldson, Senior Associate",
+        "Avian Muñoz, Associate",
+        "James Tsukada, Associate",
+        "Jonas Du, Associate",
+        "Kenneth Roedl, Associate",
+        "Lucas Pasquina, Associate",
+        "Moya Linsey, Associate",
+        "Naira Altunkeser, Associate",
+        "Serena Deng, Associate",
+        "Sofia Matson, Associate"
     ],
 
     "Spectrum": [
         "Ariana Novo, Spectrum Editor",
-        "Emma Cho, Deputy Spectrum Editor",
-        "Haley Long, Deputy Spectrum Editor",
-        "Aliza Rabinovitz, Deputy Spectrum Editor",
-        "Swethaa Suresh, Deputy Spectrum Editor",
-        "Kylie Gall, Staff Writer",
-        "Caroline Somers, Staff Writer",
-        "Michelle Twan, Staff Writer"  
     ],
 
     "Arts and Entertainment": [
         "Bella Druckman, Arts and Entertainment Editor",
-        "Fernanda Aguero, Deputy Editor",
         "Noah Bullwinkle, Deputy Editor",
-        "Isa Farfan, Deputy Editor",
-        "Vincent Hou, Deputy Editor",
         "Katie Levine, Deputy Editor",
-        "Irene Madrigal, Deputy Editor",
+        "Vincent Hou, Deputy Editor",
+        "Fernanda Aguero, Deputy Editor",
         "Emma Schartz, Deputy Editor",
-        "Fernanda Aguero, Deputy Editor"
+        "Isa Farfan, Deputy Editor",
+        "Ariana Eftimiu, Staff writer",
+        "Laura Jiang, Staff writer",
+        "Sarah Shapiro, Staff writer",
+        "Bella Pechaty, Staff writer",
+        "Jane Loughman, Staff writer",
+        "Ariana Eftimiu, Staff writer",
+        "Ava Roberts, Staff writer",
+        "Emily Chen, Staff writer",
+        "Juliet Tochterman, Staff writer",
+        "Victoria Irrizary, Staff writer"
     ],
 }
 

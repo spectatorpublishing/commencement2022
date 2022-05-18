@@ -276,9 +276,9 @@ const EmailBody = () => {
             <p>In reflection and celebration of the first in-person Commencement week since 2019, Spectator spoke with seniors from across the University, highlighting the stories of Columbia’s graduating artists, athletes, activists, and more. In this year’s Commencement edition, find articles on Columbia’s largest cohort of formerly incarcerated students to graduate, senior columns from graduating members of Spectator, and profiles on athletes who changed the game for their respective teams.</p>
             <p>During this historic moment for Columbia’s students, Spectator sends its deepest congratulations to the classes of 2020, 2021, and 2022—whether you are returning to campus for the first time since 2020 to walk the stage or you’ve spent the past two months soaking up the last of your sun-filled days on Low Beach as an undergraduate, we hope you can find reflections of your Columbia experience in this edition.</p>
             <p>Clara Ence Morse,<br></br>
-            Editor in Chief, President <br></br>
+            Editor in Chief<br></br>
             Dia Gill, <br></br>
-            Managing Editor, Vice President</p>
+            Managing Editor</p>
         </BodyWrapper>
     )
 }
