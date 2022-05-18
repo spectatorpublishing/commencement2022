@@ -13,7 +13,7 @@ const staff = {
     ],
 
     "Cover Photo By": [
-        "Millie Felder, Senior Staff Photographer"
+        "Millie Felder, Photo Editor"
     ],
 
     "Illustrations": [
@@ -128,6 +128,16 @@ const staff = {
         "Juliet Tochterman, Staff writer",
         "Victoria Irrizary, Staff writer"
     ],
+    "Revenue": [
+       "Haru Yamanaka, Revenue Director",
+       "Amanda Teramihardja, Revenue Manager",
+       "Anushka Thorat, Revenue Manager"
+    ],
+    "Engagement": [
+        "Kailin Huang, Engagement Manager",
+        "Samantha Turk, Engagement Manager",
+        "El Chu, Engagement Analyst"
+     ],
 }
 
 export default staff

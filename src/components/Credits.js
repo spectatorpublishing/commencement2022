@@ -37,6 +37,21 @@ const Column = styled.div`
     @media (max-width: ${theme.sizes.tablet}) {
         margin: auto;
         width: fit-content;
+        display: none
+    }
+
+`;
+
+const ColumnMobile = styled.div`
+    display: none;
+
+    @media (max-width: ${theme.sizes.tablet}) {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+        margin: auto;
+        width: fit-content;
     }
 
 `;
@@ -70,8 +85,10 @@ const NameLine = styled.div`
 // const panel1 = ["Corporate Board", "Design and Development", "Cover Illustration By", "Illustration", "The Eye", "Sports"]
 // const panel2 = ["University News", "City News", "Copy"]
 // const panel3 = ["Photo", "Opinion", "Spectrum", "Arts and Entertainment"]
-const panel1 = ["Corporate Board", "Photo", "Copy"]
-const panel2 = ["Design and Development", "Illustrations"]
+const panel1 = ["Corporate Board", "Opinion", "Arts and Entertainment", "Copy", "Engagement"]
+const panel2 = ["Design and Development", "News", "Sports", "Spectrum", "Graphics", "Illustrations", "Photo", "Revenue"]
+
+const panelMobile = ["Corporate Board", "Design and Development", "News", "Opinion", "Sports", "Arts and Entertainment", "Graphics", "Spectrum", "Illustrations", "Photo", "Copy", "Revenue", "Engagement"]
 
 const Section = (props) => {
     var creditsList = []
@@ -106,11 +123,11 @@ const Credits = () => {
                     <Section section={sectionName}></Section>
                 ))}
             </Column>
-            {/* <Column>
-                {panel3.map((sectionName) => (
+            {<ColumnMobile>
+                {panelMobile.map((sectionName) => (
                     <Section section={sectionName}></Section>
                 ))}
-            </Column> */}
+            </ColumnMobile>}
         </CreditsWrapper>
     )
 }
