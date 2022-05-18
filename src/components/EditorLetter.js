@@ -18,11 +18,14 @@ const LetterWrapper = styled.div`
   align-items: center;
   overflow: hidden;
 
+  @media (max-width: ${theme.sizes.tablet}) {
+    padding: 2.5rem 0 2rem 0;
+  }
+
   @media (max-width: ${theme.sizes.mobile}) {
       width: 93%;
       border-radius: 15px;
       margin: 1rem;
-      padding: 0;
   }
 `;
 

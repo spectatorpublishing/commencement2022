@@ -17,11 +17,11 @@ const CreditsWrapper = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
 
-  @media (max-width: ${theme.sizes.mobile}) {
+  @media (max-width: ${theme.sizes.tablet}) {
       width: 93%;
       border-radius: 15px;
       margin: 1rem;
-      padding: 0;
+      padding: 2rem 0;
   }
 `;
 

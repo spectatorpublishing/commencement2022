@@ -20,6 +20,10 @@ const Bubble = styled.li`
         &.reaction {
             margin-bottom: 0.2rem;
         }
+
+        &.sectionTitle {
+            font-size: 2rem;
+        }
     }
 
     @media (max-width: ${theme.sizes.mobile}) {
@@ -29,6 +33,10 @@ const Bubble = styled.li`
 
         &.reaction {
             margin-bottom: 0.1rem;
+        }
+
+        &.sectionTitle {
+            font-size: 1.5rem;
         }
     }
 
@@ -82,12 +90,12 @@ const Icon = styled.div`
     }
 `
 
-const TextBubbleTitle = ({text, status, reaction}) => {
+const TextBubbleTitle = ({text, status, reaction, className}) => {
 
     return (
         <BubbleWrapper className={status}>
             {reaction ? <HeartIcon title={true}/> : null}
-            <Bubble className={status + " noTail" + (reaction ? " reaction" : "")}>{text}</Bubble>
+            <Bubble className={status + " noTail" + (reaction ? " reaction" : "") + " " + className}>{text}</Bubble>
         </BubbleWrapper>
     )
 }

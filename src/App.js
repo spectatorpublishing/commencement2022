@@ -22,22 +22,25 @@ const HomeContainer = styled.div`
 const SectionTitle = styled.div`
   width: fit-content;
   margin: 5rem auto 0rem auto;
+  @media (max-width: ${theme.sizes.tablet}) {
+    margin: 1rem auto 0rem auto;
+  }
 `;
 
 const App = () => (
     <HomeContainer>
       <TitleHeader/>
       <SectionTitle>
-        <TextBubbleTitle status={"sent"} isLast={false} text={"Letter to the Editor"}/>
+        <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Letter to the Editor"}/>
       </SectionTitle>
       <Letter />
       <SectionTitle>
-        <TextBubbleTitle status={"sent"} isLast={false} text={"Articles"}/>
+        <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Articles"}/>
       </SectionTitle>
       <TextConvoDesktop/>
       <TextConvo />
       <SectionTitle>
-        <TextBubbleTitle status={"sent"} isLast={false} text={"Credits"}/>
+        <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Credits"}/>
       </SectionTitle>
       <Credits />
       <LetterC/>
