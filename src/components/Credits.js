@@ -10,18 +10,16 @@ const CreditsWrapper = styled.div`
   background-color: ${theme.colors.lightGray};
   align-self: center;
   margin: 4rem;
-  padding: 4rem 0;
+  padding: 4rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-around;
-  flex-wrap: wrap;
 
   @media (max-width: ${theme.sizes.tablet}) {
-      width: 93%;
-      border-radius: 40px;
-      margin: 1rem auto;
-      padding: 2rem 0;
+    flex-direction: column;
+    width: 93%;
+    border-radius: 40px;
+    margin: 1rem auto;
+    padding: 2rem 0;
   }
 
   @media (max-width: ${theme.sizes.mobile}) {
@@ -30,15 +28,17 @@ const CreditsWrapper = styled.div`
 `;
 
 const Column = styled.div`
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 1rem;
     text-align: left;
 
-    @media only screen and (max-width: 750px) {
-        margin: 0rem 2rem 0rem 2rem;
+    @media (max-width: ${theme.sizes.tablet}) {
+        margin: auto;
+        width: fit-content;
     }
+
 `;
 
 const SubDiv = styled.div`
@@ -60,10 +60,6 @@ const SubDiv = styled.div`
         text-align: center;
         padding-bottom: 2rem;
     }
-`;
-
-const Bold = styled.p`
-    font-weight: bold;
 `;
 
 const NameLine = styled.div`

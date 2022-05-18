@@ -106,6 +106,21 @@ const TitleImage = styled.div`
     height: 100vh;
     width: 100%;
     background-color: grey;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    @media (max-width: ${theme.sizes.tablet}) {
+        height: 40rem;
+    }
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        height: 20rem;
+    }
 `;
 
 const TitleHeader = () => {
@@ -126,7 +141,7 @@ const TitleHeader = () => {
                 </RightTitle>
             </ItemsWrapper>
             <TitleImage>
-
+                <img src="https://commencement2022.s3.amazonaws.com/low-from-butler+1.png"/>
             </TitleImage>
         </HeaderWrapper>
     )
