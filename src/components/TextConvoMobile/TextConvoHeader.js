@@ -9,18 +9,20 @@ const HeaderWrapper = styled.div`
     background-color: ${theme.colors.lightGray};
     display: flex;
     flex-direction: column;
+    border-radius: 50px 50px 0px 0px;
 `;
 
 const StatusBar = styled.div`
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
 `;
 
 const Time = styled.div`
     margin: auto auto auto 2rem;
     width: fit-content;
 
-    font-size: 2rem;
+    font-size: 1.3rem;
 `;
 
 const Icons = styled.div`
@@ -30,19 +32,19 @@ const Icons = styled.div`
 
     svg {
         margin: auto 0.4rem;
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     img {
         margin: auto 0.3rem;
-        height: 3.5rem;
+        height: 2rem;
     }
 `;
 
 const CenterLogo = styled.div`
     margin: 2rem auto;
     padding-left: 9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     svg {
         margin: auto 0.5rem;
@@ -54,26 +56,26 @@ const Logo = styled.div`
     display: flex;
     border-radius: 80px;
     background-color: ${theme.colors.lightBlue};
-    width: 9rem;
-    height: 9rem;
+    width: 6rem;
+    height: 6rem;
     margin: 0rem auto;
 
     img {
-        width: 70%;
-        margin: auto auto auto auto;
+        width: 65%;
+        margin: auto;
     }
 `;
 
 const ColumbiaText = styled.div`
     width: fit-content;
-    margin: 0.5rem auto;
-    line-height: 2rem;
+    margin: 1rem auto;
+    line-height: 1.5rem;
 `;
 
 const FacetimeIcon = styled.div`
     display: flex;
     margin: auto 5rem auto 1rem;
-    width: 4.5rem;
+    width: 3rem;
 
     img {
         margin: auto 0rem;

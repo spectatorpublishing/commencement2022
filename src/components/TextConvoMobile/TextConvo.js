@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styled from 'styled-components/macro';
 import theme from "../../theme";
 import Keyboard from "../Keyboard/Keyboard";
@@ -6,15 +6,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 import TextConvoHeader from "./TextConvoHeader";
+import Articles from "./Articles";
 
 const TextConvoWrapper = styled.div`
   display: none;
 
   @media (max-width: ${theme.sizes.tablet}) {
-      width: 93%;
-      border-radius: 15px;
-      margin: 1rem;
-      height: fit-content;
+    width: 93%;
+    border-radius: 40px;
+    margin: 1rem;
+    height: fit-content;
     min-height: 60%;
     background-color: ${theme.colors.lightGray};
     display: flex;
@@ -106,14 +107,66 @@ const SendBubble = styled.div`
     }
 `;
 
+const KeyboardImage = styled.div`
+    width: 100%;
+    height: fit-content;
+    margin: 0rem auto;
+    display: flex;
+
+    img {
+        width: 100%;
+        margin: auto;
+    }
+`;
+
+const sections = {
+    "Arts & Entertainment": {
+        section: "Arts & Entertainment",
+        color: theme.colors.yellow,
+        shortName: "A&E"
+    },
+    "News": {
+        section: "News",
+        color: theme.colors.pink,
+        shortName: "N"
+    },
+    "Opinion": {
+        section: "Opinion",
+        color: theme.colors.green,
+        shortName: "O"
+    },
+    "Sports": {
+        section: "Sports",
+        color: theme.colors.alternateBlue,
+        shortName: "S"
+    },
+    "Spectrum": {
+        section: "Spectrum",
+        color: theme.colors.red,
+        shortName: "S"
+    },
+    "Miscellaneous": {
+        section: "Miscellaneous",
+        color: theme.colors.darkGray,
+        shortName: "M"
+    },
+}
+
 const TextConvo = () => {
+    const [section, setSection] = useState(sections["Arts & Entertainment"]);
+
+    const selectSection = (name) => {
+        setSection(sections[name])
+    }
+
     return (
         <TextConvoWrapper>
             <HeaderWrapper>
                 <TextConvoHeader/>
             </HeaderWrapper>
             <TextsWrapper></TextsWrapper>
-            <TypingBar>
+            <Articles selectedSection={section}/>
+            {/* <TypingBar>
                 <IconWrapper>
                     <FontAwesomeIcon icon={faCamera} ></FontAwesomeIcon>
                 </IconWrapper>
@@ -127,7 +180,10 @@ const TextConvo = () => {
                     </SendBubble>
                 </TypingBubble>
             </TypingBar>
-            <Keyboard />
+            <Keyboard /> */}
+            <KeyboardImage>
+                <img src="https://commencement2022.s3.amazonaws.com/fullkeyboard.png"/>
+            </KeyboardImage>
         </TextConvoWrapper>
     )
 }

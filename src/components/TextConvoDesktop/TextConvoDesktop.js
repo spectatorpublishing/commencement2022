@@ -64,10 +64,7 @@ const TextConvoDesktop = () => {
     const [section, setSection] = useState(sections["Arts & Entertainment"]);
 
     const selectSection = (name) => {
-        //console.log(name)
         setSection(sections[name])
-        console.log("new section selected:", sections[name])
-        //console.log(section)
     }
 
     return (
