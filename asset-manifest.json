@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/commencement2022/static/css/main.1bb8ab18.css",
+    "main.js": "/commencement2022/static/js/main.20d4bc9f.js",
+    "static/js/787.0be502bc.chunk.js": "/commencement2022/static/js/787.0be502bc.chunk.js",
+    "index.html": "/commencement2022/index.html",
+    "main.1bb8ab18.css.map": "/commencement2022/static/css/main.1bb8ab18.css.map",
+    "main.20d4bc9f.js.map": "/commencement2022/static/js/main.20d4bc9f.js.map",
+    "787.0be502bc.chunk.js.map": "/commencement2022/static/js/787.0be502bc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bb8ab18.css",
+    "static/js/main.20d4bc9f.js"
+  ]
+}
