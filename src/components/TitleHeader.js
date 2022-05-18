@@ -136,6 +136,7 @@ const TitleText = styled.div`
     font-size: 6rem;
     color: white;
     width: 100%;
+    text-shadow: 1px 1px black;
 
     @media (max-width: ${theme.sizes.tablet}) {
         font-size: 4rem;    
