@@ -9,6 +9,7 @@ import TextConvoDesktop from './components/TextConvoDesktop/TextConvoDesktop';
 import Messages from './components/TextBubblesExample';
 import TitleHeader from './components/TitleHeader';
 import TextBubbleTitle from './components/TextBubbleTitle';
+import LetterC from './components/C';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -39,7 +40,8 @@ const App = () => (
         <TextBubbleTitle status={"sent"} isLast={false} text={"Credits"}/>
       </SectionTitle>
       <Credits />
-      <Messages/>
+      <LetterC/>
+{/*       <Messages/> */}
     </HomeContainer>
 );
 

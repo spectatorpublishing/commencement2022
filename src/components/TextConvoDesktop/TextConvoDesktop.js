@@ -7,8 +7,12 @@ import theme from "../../theme";
 const Wrapper = styled.div`
     display: flex;
     width: 85%;
-    margin: 1rem auto;
+    margin: 4rem auto;
     border-radius: 90px;
+
+  @media (max-width: ${theme.sizes.tablet}) {
+    display: none;
+  }
 `;
 
 const sections = {

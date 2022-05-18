@@ -8,23 +8,18 @@ import { faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 import TextConvoHeader from "./TextConvoHeader";
 
 const TextConvoWrapper = styled.div`
-  height: fit-content;
-  min-height: 60%;
-  width: 85%;
-  border-radius: 90px;
-  background-color: ${theme.colors.lightGray};
-  align-self: center;
-  margin: 4rem;
-  padding: 5rem 0 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
 
-  @media (max-width: ${theme.sizes.mobile}) {
+  @media (max-width: ${theme.sizes.tablet}) {
       width: 93%;
       border-radius: 15px;
       margin: 1rem;
-      padding: 0;
+      height: fit-content;
+    min-height: 60%;
+    background-color: ${theme.colors.lightGray};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

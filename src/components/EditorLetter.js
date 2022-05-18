@@ -9,13 +9,14 @@ const LetterWrapper = styled.div`
   min-height: 60%;
   width: 85%;
   border-radius: 90px;
-  background-color: ${theme.colors.lightGray};
+  background-color: ${theme.colors.white};
   align-self: center;
-  margin: 4rem;
+  margin: 4rem 4rem 0rem 4rem;
   padding: 2.5rem 0 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 
   @media (max-width: ${theme.sizes.mobile}) {
       width: 93%;
@@ -301,12 +302,12 @@ const BottomBar = () => {
 const EditorLetter = () => {
     return (
         <LetterWrapper>
-            <TopBar></TopBar>
+            {/* <TopBar></TopBar> */}
             <EmailWrapper>
-                <EmailHeader></EmailHeader>
+                {/* <EmailHeader></EmailHeader> */}
                 <EmailBody></EmailBody>
             </EmailWrapper>
-            <BottomBar></BottomBar>
+            {/* <BottomBar></BottomBar> */}
         </LetterWrapper>
     )
 }

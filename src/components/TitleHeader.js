@@ -54,7 +54,7 @@ const ColumbiaText = styled.div`
 `;
 
 const TitleImage = styled.div`
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-color: grey;
 `;
