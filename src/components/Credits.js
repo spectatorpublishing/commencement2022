@@ -71,7 +71,7 @@ const NameLine = styled.div`
 // const panel1 = ["Corporate Board", "Design and Development", "Cover Illustration By", "Illustration", "The Eye", "Sports"]
 // const panel2 = ["University News", "City News", "Copy"]
 // const panel3 = ["Photo", "Opinion", "Spectrum", "Arts and Entertainment"]
-const panel1 = ["Photo", "Copy"]
+const panel1 = ["Corporate Board", "Photo", "Copy"]
 const panel2 = ["Design and Development", "Illustrations"]
 
 const Section = (props) => {

@@ -52,6 +52,26 @@ const Text = styled.span`
     margin-right: 0.3rem;
 `;
 
+const Sticker1 = styled.div`
+    width: 12rem;
+    height: fit-content;
+    margin: 1rem 1rem 1rem auto;
+
+    img {
+        width: 100%;
+    }
+`;
+
+const Sticker2 = styled.div`
+    width: 10rem;
+    height: fit-content;
+    margin: 1rem auto 3rem 1rem;
+
+    img {
+        width: 100%;
+    }
+`;
+
 const Articles = ({selectedSection}) => {
     const [currArticles, setArticles] = useState(articles["Arts & Entertainment"])
     const [currArticleDivs, setArticleDivs] = useState([]);
@@ -91,6 +111,8 @@ const Articles = ({selectedSection}) => {
             </Header>
             <ArticleWrap>
                 {currArticleDivs}
+                {selectedSection.section === "Spectrum" ? <Sticker1><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/TBXMS6DUBVC6THIGRZQGPZKYBA.gif"/></Sticker1> : null}
+                {selectedSection.section === "Spectrum" ? <Sticker2><img src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NYA4JDPMTNDC3B2C5JKGFVBUIA.gif"/></Sticker2> : null}
                 <FinalText selectedSection={selectedSection}/>
             </ArticleWrap>
             <TextBoxWrap>
@@ -120,8 +142,6 @@ const FinalText = ({selectedSection}) => {
     useEffect(() => {
         setBubble(bubbles[selectedSection.section]);
     },[selectedSection])
-
-    
 
     return (
         bubble
