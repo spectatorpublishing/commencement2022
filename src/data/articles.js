@@ -135,11 +135,50 @@ const articles = {
           imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YPYEUEJPNNDN3OLIKEKDWX2S3M.png"
         }
       ],
-    "Opinion": [{
-        title: "Brothers in arms: How a lifelong friendship sharpened the country's two best men's foil fencers",
-        author: "Robert Gao",
-        imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DDP6LUFWSRA2PG2TJDASS5KL7E.jpg",
-    }],
+    "Opinion": [
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/16/i-majored-in-spec-heres-why-you-shouldnt/",
+          title: "I majored in Spec. Here’s why you shouldn’t.",
+          author: "Elizabeth Karpen",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/V4RIJWIGSFF33FHOJZW64RSDEQ.jpeg"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/17/i-was-the-first-black-woman-publisher-at-spectatorand-i-was-elected-by-fluke/",
+          title: "I was the first Black woman Publisher at Spectator—and I was elected by fluke.",
+          author: "Tamarah Wallace",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/J55BA4KZWNBHDBWJDANDODZUOU.JPEG"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/16/the-city-news-section-the-spectator-strike-and-showing-my-love-by-being-a-nuisance/",
+          title: "The City News section, the Spectator strike, and showing my love by being a nuisance",
+          author: "Stephanie Lai",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DYSJAIMLIRD4NOBE34MUIGVYDI.jpeg"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/17/diary-of-a-double-agent-my-time-as-an-artist-and-arts-journalist/",
+          title: "Diary of a double agent: My time as an artist and arts journalist",
+          author: "Abby Rooney",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/Q2RSHECC5VHFNFURP4T7AM6DEM.JPG"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/17/right-where-i-want-to-be-despite-the-unfathomable-changes/",
+          title: "Right where I want to be, despite the unfathomable changes",
+          author: "Mackenzie George",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/KUR2WXUWFVFWVN52AFTMRY4UFU.jpg"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/17/structure-where-ballet-and-spectator-meet/",
+          title: "Structure: where ballet and Spectator meet",
+          author: "Michaela Fleischer",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5UY2PYEQ6ND5ZOQLMXTKXIVVWE.JPG"
+        },
+        {
+          articleLink: "https://www.columbiaspectator.com/opinion/2022/05/17/the-landscape-of-my-columbia-a-map-worth-holding-onto/",
+          title: "The landscape of my Columbia: a map worth holding onto",
+          author: "Jade Justice",
+          imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ZFO5GYEEDZB73GCLRRMU3AJDSI.JPEG"
+        }
+      ],
     "Sports": [
         {
           articleLink: "https://www.columbiaspectator.com/sports/2022/05/16/brothers-in-arms-how-a-lifelong-friendship-sharpened-the-countrys-two-best-mens-foil-fencers/",
@@ -209,12 +248,7 @@ const articles = {
           author: "Ariana Novo",
           imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/2IZD5GL7WJBCBPA6HCWFL6PQ5Y.JPG"
         }
-      ],
-    "Miscellaneous": [{
-        title: "Brothers in arms: How a lifelong friendship sharpened the country's two best men's foil fencers",
-        author: "Robert Gao",
-        imageLink: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/DDP6LUFWSRA2PG2TJDASS5KL7E.jpg",
-    }]
+      ]
 }
 
 export default articles;

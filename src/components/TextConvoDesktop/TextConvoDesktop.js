@@ -50,14 +50,7 @@ const sections = {
         shortName: "S",
         time: "8:03 am",
         message: 'You loved "I\'m taking lots of pics!"'
-    },
-    "Miscellaneous": {
-        section: "Miscellaneous",
-        color: theme.colors.darkGray,
-        shortName: "M",
-        time: "8:01 am",
-        message: 'You loved "I\'m so proud of you!"'
-    },
+    }
 }
 
 const TextConvoDesktop = () => {

@@ -106,12 +106,16 @@ const TitleImage = styled.div`
     height: 100vh;
     width: 100%;
     background-color: grey;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: top center;
+        object-position: bottom center;
+        //transform: scale(1.2);
     }
 
     @media (max-width: ${theme.sizes.tablet}) {
@@ -121,6 +125,36 @@ const TitleImage = styled.div`
     @media (max-width: ${theme.sizes.mobile}) {
         height: 20rem;
     }
+`;
+
+const TitleText = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Georgia;
+    font-size: 6rem;
+    color: white;
+    width: 100%;
+
+    @media (max-width: ${theme.sizes.tablet}) {
+        font-size: 4rem;    
+    }
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        font-size: 3rem;
+    }
+`;
+
+const Overlay = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
 `;
 
 const TitleHeader = () => {
@@ -141,7 +175,8 @@ const TitleHeader = () => {
                 </RightTitle>
             </ItemsWrapper>
             <TitleImage>
-                <img src="https://commencement2022.s3.amazonaws.com/low-from-butler+1.png"/>
+                <img src="https://commencement2022.s3.amazonaws.com/IMG_3562.png"/>
+                <TitleText>Commencement 2022</TitleText>
             </TitleImage>
         </HeaderWrapper>
     )

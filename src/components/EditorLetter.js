@@ -193,6 +193,7 @@ const BodyWrapper = styled.div`
     display: flex;
     flex-direction: column;
     font-size: 2rem;
+    line-height: 2rem;
 
     @media (max-width: ${theme.sizes.mobile}) {
         margin: 0;
@@ -271,13 +272,11 @@ const EmailBody = () => {
         <BodyWrapper>
             <h1>Columbia University Commencement 2022</h1>
             <p>Dear readers,</p>
-            <p>More than ever, this year’s Homecoming truly feels like coming home. Many of us spent last year away from Morningside Heights, creating a Columbia community from the confines of our bedrooms. While not back in full swing, after 18 months we are back to campus, back to the Baker Athletics Complex, and most importantly, back to being a unified community. </p>
-            <p>At Spectator, we have used our year of remote learning to reevaluate what it means to be a Columbia student and a member of the greater Morningside Heights and West Harlem communities. Despite being back on campus, many students from all class years still struggle with feeling fully ingrained at Columbia. Homecoming weekend serves as a time to come together and to help find your community whether you are a first-year, senior, or even an alum.</p>
-            <p>Whether you are the biggest Columbia Lions fan out there, or have never stepped foot near a football stadium, we hope this edition shows you that Homecoming is more than just watching the Light Blue play against Penn. It’s about looking back at memories at the University, but also looking forward.</p>
-            <p>We invite you to take a look back on the stories that have shaped Homecoming this year, prepare for Saturday afternoon’s game, and reflect on the last 250 years of education and community. </p>
-            <p>Sarah Braka, <br></br>
+            <p>In reflection and celebration of the first in-person Commencement week since 2019, Spectator spoke with seniors from across the University, highlighting the stories of Columbia’s graduating artists, athletes, activists, and more. In this year’s Commencement edition, find articles on Columbia’s largest cohort of formerly incarcerated students to graduate, senior columns from graduating members of Spectator, and profiles on athletes who changed the game for their respective teams.</p>
+            <p>During this historic moment for Columbia’s students, Spectator sends its deepest congratulations to the classes of 2020, 2021, and 2022—whether you are returning to campus for the first time since 2020 to walk the stage or you’ve spent the past two months soaking up the last of your sun-filled days on Low Beach as an undergraduate, we hope you can find reflections of your Columbia experience in this edition.</p>
+            <p>Clara Ence Morse,<br></br>
             Editor in Chief, President <br></br>
-            Lizzie Karpen, <br></br>
+            Dia Gill, <br></br>
             Managing Editor, Vice President</p>
         </BodyWrapper>
     )

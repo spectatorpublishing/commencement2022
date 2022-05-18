@@ -35,7 +35,7 @@ const App = () => (
     <HomeContainer>
       <TitleHeader/>
       <SectionTitle>
-        <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Letter to the Editor"}/>
+        <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Letter from the Editor"}/>
       </SectionTitle>
       <Letter />
       <SectionTitle className='articles'>

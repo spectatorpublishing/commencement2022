@@ -153,12 +153,7 @@ const sections = {
         section: "Spectrum",
         color: theme.colors.red,
         shortName: "S"
-    },
-    "Miscellaneous": {
-        section: "Miscellaneous",
-        color: theme.colors.darkGray,
-        shortName: "M"
-    },
+    }
 }
 
 const TextConvo = () => {
