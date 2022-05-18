@@ -26,6 +26,8 @@ const LetterWrapper = styled.div`
 
   @media (max-width: ${theme.sizes.mobile}) {
       border-radius: 20px;
+      margin: 2rem auto 0rem auto;
+      padding: 2.5rem 0;
   }
 `;
 
@@ -197,7 +199,6 @@ const BodyWrapper = styled.div`
 
     @media (max-width: ${theme.sizes.mobile}) {
         margin: 0;
-        padding-bottom: 1rem;
     }
 `;
 

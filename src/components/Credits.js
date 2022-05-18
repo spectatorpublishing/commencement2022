@@ -57,7 +57,6 @@ const SubDiv = styled.div`
     }
 
     @media only screen and (max-width: 750px) {
-        text-align: center;
         padding-bottom: 2rem;
     }
 `;
