@@ -15,23 +15,52 @@ const ItemsWrapper = styled.div`
     width: fit-content;
     display: flex;
     flex-direction: row;
-    margin: 0rem auto;
+    margin: 1rem auto;
+
+    @media (max-width: 360px) {
+        flex-direction: column;
+    }
 `;
 
 const LeftTitle = styled.div`
     margin: auto 1rem;
     padding-bottom: 1.7rem;
     width: fit-content;
+
+    @media (max-width: 360px) {
+        margin: auto;
+        padding-bottom: 0.7rem;
+    }
 `;
 
 const RightTitle = styled.div`
     margin: auto 1rem auto 0rem;
     width: fit-content;
+
+    @media (max-width: 360px) {
+        padding-top: 0.5rem;
+        margin-bottom: 2rem;
+        margin: auto;
+    }
 `;
 
 const CenterLogo = styled.div`
     margin: 2rem 7rem;
     font-size: 2rem;
+
+    @media (max-width: ${theme.sizes.tablet}) {
+        margin: 2rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+        margin: 2rem 1rem;
+        font-size: 1rem;
+    }
+
+    @media (max-width: 360px) {
+        margin: auto;
+    }
 `;
 
 const Logo = styled.div`
@@ -44,8 +73,28 @@ const Logo = styled.div`
 
     img {
         width: 70%;
-        margin: auto auto auto auto;
+        margin: auto;
     }
+
+    @media (max-width: ${theme.sizes.tablet}) {
+        width: 6rem;
+        height: 6rem;
+
+        img {
+            width: 65%;
+        }
+    }
+
+    @media (max-width: ${theme.sizes.mobile}) {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    @media (max-width: 400px) {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
 `;
 
 const ColumbiaText = styled.div`
