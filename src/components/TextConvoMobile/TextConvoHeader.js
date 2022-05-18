@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBatteryThreeQuarters, faChevronRight, faSignal, faWifi } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components/macro";
 import theme from "../../theme";
 
 const HeaderWrapper = styled.div`
@@ -10,12 +10,20 @@ const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: column;
     border-radius: 50px 50px 0px 0px;
+
+    @media (max-width: 500px) {
+        border-radius: 30px 30px 0px 0px;
+    }
 `;
 
 const StatusBar = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
+
+    @media (max-width: 500px) {
+        margin-top: 1rem;
+    }
 `;
 
 const Time = styled.div`
@@ -23,6 +31,11 @@ const Time = styled.div`
     width: fit-content;
 
     font-size: 1.3rem;
+
+    @media (max-width: 500px) {
+        margin: auto auto auto 1rem;
+        font-size: 1rem;
+    }
 `;
 
 const Icons = styled.div`
@@ -39,43 +52,54 @@ const Icons = styled.div`
         margin: auto 0.3rem;
         height: 2rem;
     }
-`;
 
-const CenterLogo = styled.div`
-    margin: 2rem auto;
-    padding-left: 9rem;
-    font-size: 1.5rem;
+    @media (max-width: 500px) {
+        margin: auto 1rem auto auto;
 
-    svg {
-        margin: auto 0.5rem;
-        font-size: 1rem;
+        svg {
+            margin: auto 0.4rem;
+            font-size: 1rem;
+        }
+    
+        img {
+            margin: auto 0.3rem;
+            height: 1.8rem;
+        }
     }
 `;
 
-const Logo = styled.div`
-    display: flex;
-    border-radius: 80px;
-    background-color: ${theme.colors.lightBlue};
-    width: 6rem;
-    height: 6rem;
-    margin: 0rem auto;
+const CenterLogo = styled.div`
+    margin: 1rem auto 2rem auto;
 
-    img {
-        width: 65%;
-        margin: auto;
+    svg {
+        font-size: 1rem;
+        margin: auto 0.3rem;
+    }
+
+    @media (max-width: 500px) {
+        margin: 0rem auto 2rem auto;
     }
 `;
 
 const ColumbiaText = styled.div`
     width: fit-content;
-    margin: 1rem auto;
+    margin: auto;
     line-height: 1.5rem;
+    font-size: 1.5rem;
+
+
+    @media (max-width: 500px) {
+        font-size: 1.3rem;
+        line-height: 1.3rem;
+    }
 `;
 
 const FacetimeIcon = styled.div`
-    display: flex;
-    margin: auto 5rem auto 1rem;
+    margin: auto 2rem auto 1rem;
     width: 3rem;
+    postion: relative;
+    top: 0;
+    right: 0;
 
     img {
         margin: auto 0rem;
@@ -87,7 +111,26 @@ const Row = styled.div`
     display: flex;
 `;
 
-const TextConvoHeader = () => {
+const ContactPhoto = styled.div`
+    display: flex;
+    background-color: ${props => props.color};
+    max-width: 4.5rem;
+    min-width: 4.5rem;
+    max-height: 4.5rem;
+    min-height: 4.5rem;
+    border-radius: 100px;
+    margin: 1rem auto 1rem auto;
+`;
+
+const ShortText = styled.div`
+    margin: auto;
+    color: white;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 800;
+`;
+
+const TextConvoHeader = ({section}) => {
     return (
         <HeaderWrapper>
             <StatusBar>
@@ -101,16 +144,15 @@ const TextConvoHeader = () => {
             </StatusBar>
             <Row>
                 <CenterLogo>
-                    <Logo>
-                        <img src="https://commencement2022.s3.amazonaws.com/Columbia_Lions_logo.png"/>
-                    </Logo>
-                   <Row><ColumbiaText>Columbia</ColumbiaText><FontAwesomeIcon icon={faChevronRight}/></Row> 
+                    <ContactPhoto color={section.color}>
+                        <ShortText>{section.shortName}</ShortText>
+                    </ContactPhoto>
+                   <Row><ColumbiaText>{section.section}</ColumbiaText><FontAwesomeIcon icon={faChevronRight}/></Row> 
                 </CenterLogo>
-                <FacetimeIcon>
+                {/* <FacetimeIcon>
                      <img src="https://commencement2022.s3.amazonaws.com/icons8-video-call-100.png"/>
-                </FacetimeIcon>
+                </FacetimeIcon> */}
             </Row>
-            
         </HeaderWrapper>
     )
 }

@@ -19,13 +19,13 @@ const LetterWrapper = styled.div`
   overflow: hidden;
 
   @media (max-width: ${theme.sizes.tablet}) {
-    padding: 2.5rem 0 2rem 0;
+    width: 93%;
+    margin: 4rem auto 4rem 0rem auto;
+    border-radius: 40px;
   }
 
   @media (max-width: ${theme.sizes.mobile}) {
-      width: 93%;
-      border-radius: 15px;
-      margin: 1rem;
+      border-radius: 20px;
   }
 `;
 

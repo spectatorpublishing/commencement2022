@@ -54,7 +54,7 @@ const CenterLogo = styled.div`
     }
 
     @media (max-width: 500px) {
-        margin: 2rem 1rem;
+        margin: 1rem 1rem;
         font-size: 1rem;
     }
 

@@ -6,10 +6,9 @@ import Credits from './components/Credits';
 import Letter from './components/EditorLetter';
 import TextConvo from './components/TextConvoMobile/TextConvo';
 import TextConvoDesktop from './components/TextConvoDesktop/TextConvoDesktop';
-import Messages from './components/TextBubblesExample';
 import TitleHeader from './components/TitleHeader';
 import TextBubbleTitle from './components/TextBubbleTitle';
-import LetterC from './components/C';
+import LetterC from './components/LetterC';
 
 const HomeContainer = styled.div`
   height: 100%;
@@ -22,8 +21,13 @@ const HomeContainer = styled.div`
 const SectionTitle = styled.div`
   width: fit-content;
   margin: 5rem auto 0rem auto;
+
   @media (max-width: ${theme.sizes.tablet}) {
     margin: 1rem auto 0rem auto;
+
+    &.articles {
+      display: none;
+    }
   }
 `;
 
@@ -34,7 +38,7 @@ const App = () => (
         <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Letter to the Editor"}/>
       </SectionTitle>
       <Letter />
-      <SectionTitle>
+      <SectionTitle className='articles'>
         <TextBubbleTitle status={"sent"} isLast={false} className="sectionTitle" text={"Articles"}/>
       </SectionTitle>
       <TextConvoDesktop/>
@@ -44,7 +48,6 @@ const App = () => (
       </SectionTitle>
       <Credits />
       <LetterC/>
-{/*       <Messages/> */}
     </HomeContainer>
 );
 

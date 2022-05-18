@@ -7,6 +7,7 @@ import { faCamera, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { faAppStoreIos } from '@fortawesome/free-brands-svg-icons';
 import TextConvoHeader from "./TextConvoHeader";
 import Articles from "./Articles";
+import TopNav from "./TopNav";
 
 const TextConvoWrapper = styled.div`
   display: none;
@@ -14,7 +15,7 @@ const TextConvoWrapper = styled.div`
   @media (max-width: ${theme.sizes.tablet}) {
     width: 93%;
     border-radius: 40px;
-    margin: 1rem;
+    margin: 1rem auto;
     height: fit-content;
     min-height: 60%;
     background-color: ${theme.colors.lightGray};
@@ -22,6 +23,10 @@ const TextConvoWrapper = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: ${theme.sizes.mobile}) {
+    border-radius: 20px;
+}
 `;
 
 const HeaderWrapper = styled.div`
@@ -119,6 +124,10 @@ const KeyboardImage = styled.div`
     }
 `;
 
+const ArticlesWrapper = styled.div`
+    
+`;
+
 const sections = {
     "Arts & Entertainment": {
         section: "Arts & Entertainment",
@@ -160,9 +169,11 @@ const TextConvo = () => {
     }
 
     return (
+        <ArticlesWrapper>
+            <TopNav sections={sections} selectedSection={section} setSection={selectSection}/>
         <TextConvoWrapper>
             <HeaderWrapper>
-                <TextConvoHeader/>
+                <TextConvoHeader section={section}/>
             </HeaderWrapper>
             <TextsWrapper></TextsWrapper>
             <Articles selectedSection={section}/>
@@ -185,6 +196,7 @@ const TextConvo = () => {
                 <img src="https://commencement2022.s3.amazonaws.com/fullkeyboard.png"/>
             </KeyboardImage>
         </TextConvoWrapper>
+        </ArticlesWrapper>
     )
 }
 

@@ -19,10 +19,14 @@ const CreditsWrapper = styled.div`
 
   @media (max-width: ${theme.sizes.tablet}) {
       width: 93%;
-      border-radius: 15px;
-      margin: 1rem;
+      border-radius: 40px;
+      margin: 1rem auto;
       padding: 2rem 0;
   }
+
+  @media (max-width: ${theme.sizes.mobile}) {
+    border-radius: 20px;
+}
 `;
 
 const Column = styled.div`

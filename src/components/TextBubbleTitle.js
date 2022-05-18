@@ -56,7 +56,7 @@ const Bubble = styled.li`
     border-radius: 50px;
     margin-left: auto;
     color: white;
-    background: #0b93f6;
+    background: ${theme.colors.blue};
 `
 
 const Icon = styled.div`
