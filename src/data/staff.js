@@ -1,6 +1,6 @@
 const staff = {
     "Corporate Board": [
-        "Clare Ence Morse, Editor in Chief",
+        "Clara Ence Morse, Editor in Chief",
         "Dia Gill, Managing Editor",
         "Vilanna Wang, Publisher"
     ],

@@ -85,10 +85,10 @@ const NameLine = styled.div`
 // const panel1 = ["Corporate Board", "Design and Development", "Cover Illustration By", "Illustration", "The Eye", "Sports"]
 // const panel2 = ["University News", "City News", "Copy"]
 // const panel3 = ["Photo", "Opinion", "Spectrum", "Arts and Entertainment"]
-const panel1 = ["Corporate Board", "Opinion", "Arts and Entertainment", "Copy", "Engagement"]
+const panel1 = ["Corporate Board", "Cover Photo By", "Opinion", "Arts and Entertainment", "Copy", "Engagement"]
 const panel2 = ["Design and Development", "News", "Sports", "Spectrum", "Graphics", "Illustrations", "Photo", "Revenue"]
 
-const panelMobile = ["Corporate Board", "Design and Development", "News", "Opinion", "Sports", "Arts and Entertainment", "Graphics", "Spectrum", "Illustrations", "Photo", "Copy", "Revenue", "Engagement"]
+const panelMobile = ["Corporate Board", "Design and Development", "Cover Photo By", "News", "Opinion", "Sports", "Arts and Entertainment", "Graphics", "Spectrum", "Illustrations", "Photo", "Copy", "Revenue", "Engagement"]
 
 const Section = (props) => {
     var creditsList = []

@@ -69,6 +69,11 @@ const Title = styled.div`
 const Author = styled.div`
     font-size: 0.8rem;
     padding: 0.5rem 1rem 1rem 1rem;
+    text-transform: lowercase;
+    
+    :first-line {
+        text-transform: capitalize;
+    }
 `;
 
 const ArticleBox = ({article, side}) => {
